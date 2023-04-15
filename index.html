@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Projeto Integrado</title>
+</head>
+<body>
+    <section>
+        <h1 >PROJETO INTEGRADO</h1>
+        <h3>Nesse ano de eleições, os candidatos a presidente estão apresentando seus programas de governo. <br>
+            Um desses programas é sobre a agricultura familiar. É bem interessante, vamos analisar a sua experiência. Ele fez uma experiência com 13.500 agricultores e verificou-se que: <br>
+             • 7.000 plantam arroz; • 4.100 plantam banana; • 3.100 plantam uva; • 2.100 plantam arroz e banana; • 1.400 plantam arroz e uva; • plantam banana e uva; • 400 plantam arroz, banana e uva. Tendo essas informações, vamos responder com a lógica:</h3>
+        <div class="container">
+            <h1 class="perguntas" id="pergunta1">a) Quantos plantam pelo menos uma das três espécies? </h1>
+            <p class="respostas"  id="resposta1"> 
+                Para descobrir quantos agricultores plantam pelo menos uma das três espécies, precisamos somar o número de agricultores que plantam cada espécie individualmente (arroz, banana, uva), e subtrair as interseções (plantam duas ou três espécies ao mesmo tempo): <br> <br>
+
+                7.000 (arroz) + 4.100 (banana) + 3.100 (uva) - 2.100 (arroz e banana) - 1.400 (arroz e uva) - x (banana e uva) - 400 (arroz, banana e uva) = total <br>
+                
+                13.500 - x = total <br>
+                13.500 - x = 9.300 <br>
+                x = 4.200 <br> <br> 
+
+                Portanto, 9.300 agricultores plantam pelo menos uma das três espécies.
+            </p>
+
+
+        </div>
+
+        <div class="container">
+            <h1 class="perguntas" id="pergunta2">b) Quantos não plantam nenhuma das três espécies? </h1>
+            <p class="respostas" id="resposta2"> 
+                Para descobrir quantos agricultores não plantam nenhuma das três espécies, precisamos subtrair o resultado anterior (9.300) do total de agricultores (13.500): <br> <br>
+
+                13.500 - 9.300 = 4.200 <br> <br>
+                Portanto, 4.200 agricultores não plantam nenhuma das três espécies.</p>
+        </div>
+        <div class="container">
+            <h1 class="perguntas" id="pergunta3">c) Quantos plantam arroz ou banana, mas não plantam uvas? </h1>
+            <p class="respostas" id="resposta3">
+                Para descobrir quantos agricultores plantam arroz ou banana, mas não plantam uvas, precisamos somar o número de agricultores que plantam arroz ou banana, e subtrair as interseções com uva (arroz e uva, banana e uva, e arroz, banana e uva): <br><br>
+
+                (7.000 + 4.100) - (1.400 + x + 400) = total <br>
+                
+                10.100 - (1.400 + x + 400) = total <br>
+                10.100 - x - 1.800 = total <br>
+                x = 7.300 <br> <br>
+
+                Portanto, 7.300 agricultores plantam arroz ou banana, mas não plantam uvas.
+                
+                </p>
+        </div>
+        <div class="container">
+            <h1 class="perguntas" id="pergunta4">d) Quantas plantam apenas uvas? </h1>
+            <p class="respostas" id="resposta4"> 
+                Para descobrir quantos agricultores plantam apenas uvas, precisamos subtrair todas as outras interseções do total de agricultores que plantam uvas: <br><br>
+
+                3.100 - 400 - x = total <br> <br>
+                
+                2.700 - x = total <br> 
+                x = 2.700 <br> <br>
+
+                Portanto, 2.700 agricultores plantam apenas uvas.</p>
+        </div>
+        <div class="container">
+            <h1 class="perguntas" id="pergunta5"> 
+                 O teste de software geralmente faz parte da última etapa na construção de um programa, visando encontrar defeitos/erros. <br>
+                 No entanto, existe uma prática que faz a inversão, o teste passa a uma das primeiras etapas. Sobre o desenvolvimento orientado a testes – TDD (Test Driven Development),  <br>
+                 explique com suas palavras o funcionamento e as etapas que estão presentes nesta prática.</h1>
+            <p class="respostas" id="resposta5">
+                O desenvolvimento orientado a testes (TDD) é uma prática de desenvolvimento de software que se baseia em escrever os testes antes mesmo de escrever o código. <br>
+                Essa abordagem coloca o teste no centro do desenvolvimento e incentiva os programadores a escreverem código de alta qualidade, visando a produção de um software mais robusto e de melhor qualidade. <br><br>
+
+                O TDD é dividido em três etapas principais: <br> <br>
+
+                1 - Escrever um teste automatizado - O primeiro passo é escrever um teste automatizado para a funcionalidade que deve ser implementada. O teste deve ser pequeno, específico e falhar, pois a funcionalidade ainda não existe. <br> <br>
+
+                2 - Escrever o mínimo de código possível para passar no teste - O segundo passo é escrever o mínimo de código possível para fazer o teste passar. O objetivo aqui é implementar apenas o que é necessário para o teste passar, sem se preocupar com a qualidade ou eficiência do código. <br> <br>
+
+                3 - Refatorar o código - O terceiro e último passo é refatorar o código para melhorar sua qualidade e eficiência. Nessa etapa, é possível eliminar duplicação de código, melhorar a legibilidade e garantir que o código está seguindo as boas práticas de programação. <br><br>
+
+                Depois que o código passa em todos os testes, ele é considerado completo e pronto para ser entregue. A prática do TDD ajuda a reduzir a quantidade de erros e bugs no software, além de melhorar a qualidade do código produzido. Com o TDD, o teste de software passa a fazer parte de todo o processo de desenvolvimento, em vez de ser uma etapa isolada no final.
+            </p>
+        </div>
+        <div class="container">
+            <h1 class="perguntas" id="pergunta6">
+                Indique uma ferramenta CASE que permite a criação de um MER para um projeto de banco de dados relacional e explique as principais vantagens desta abordagem, inclusive, <br> 
+                explanando sobre o grau de relacionamento ou de cardinalidade entre as tabelas.</h1>
+            <p class="respostas" id="resposta6">
+                Uma ferramenta CASE (Computer-Aided Software Engineering) que permite a criação de um Modelo de Entidade-Relacionamento (MER) é o ERwin Data Modeler. <br>
+                 Essa ferramenta é amplamente utilizada por profissionais de banco de dados para projetar, criar e manter bancos de dados relacionais. <br> <br>
+
+                Uma das principais vantagens do uso de um MER é a capacidade de representar visualmente as entidades e seus relacionamentos de maneira clara e intuitiva. Além disso, <br>
+                 o MER permite que o designer do banco de dados defina o grau de relacionamento ou cardinalidade entre as tabelas. <br> <br>
+
+                O grau de relacionamento ou cardinalidade refere-se ao número de ocorrências de uma entidade que podem se relacionar com outra entidade. Existem três tipos principais de graus de relacionamento:  <br> <br>
+
+                1 - Um para um (1:1): cada ocorrência da entidade A pode se relacionar com apenas uma ocorrência da entidade B e vice-versa. <br>  <br>
+
+                2 - Um para muitos (1:N): cada ocorrência da entidade A pode se relacionar com várias ocorrências da entidade B, mas cada ocorrência da entidade B pode se relacionar com apenas uma ocorrência da entidade A. <br>  <br>
+
+                3 - Muitos para muitos (N:N): cada ocorrência da entidade A pode se relacionar com várias ocorrências da entidade B e vice-versa. <br> <br>
+
+                O MER permite que o designer de banco de dados defina esses relacionamentos de forma precisa, o que ajuda a garantir que o banco de dados atenda aos requisitos do sistema e seja eficiente em termos de desempenho e armazenamento de dados.
+
+            </p>
+        </div>
+        <div class="container">
+            <h1 class="perguntas" id="pergunta7">
+                Em Algoritmos e Programação Estruturada, temos a busca pela facilitação da compreensão de programas através do número restrito de mecanismos de controle da execução de programas. <br>
+                Faça um programa na linguagem C, utilizando qualquer compilador, em que peça como entrada, seu nome, endereço e telefone, por fim, exiba esses dados na tela. Tarefa
+            </h1>
+            <p class="respostas" id="resposta7">
+                Segue abaixo o programa em linguagem C que solicita o nome, endereço e telefone do usuário e exibe esses dados na tela: <br> <br>
+
+                #include &lt;stdio.h&gt; <br> <br>
+
+                int main() { <br>
+                char nome[50], endereco[100], telefone[20]; <br> <br>
+
+                printf("Digite seu nome: "); <br>
+                fgets(nome, 50, stdin); <br> <br>
+
+                printf("Digite seu endereco: "); <br>
+                fgets(endereco, 100, stdin); <br> <br>
+
+                printf("Digite seu telefone: "); <br>
+                fgets(telefone, 20, stdin); <br> <br>
+
+                printf("\nSeus dados: \n"); <br>
+                printf("Nome: %s", nome); <br>
+                printf("Endereco: %s", endereco); <br>
+                printf("Telefone: %s", telefone); <br> <br> 
+
+                return 0; <br> <br>
+
+            } <br> <br>
+
+            Nesse programa, primeiro declaramos três variáveis para armazenar o nome, endereço e telefone do usuário. <br>
+            Em seguida, usamos a função fgets() para ler os dados digitados pelo usuário e armazená-los nas variáveis correspondentes. <br> <br>
+
+            Por fim, exibimos os dados na tela usando a função printf(). <br>
+             Note que usamos \n para pular linhas e que adicionamos uma string vazia ("") ao final de cada printf() para que a saída fique formatada corretamente.
+
+            </p>
+        </div>
+        <div class="container">
+            <h1 class="perguntas" id="pergunta8">
+                explique os relacionamentos listados a seguir: <br> <br>
+                 a) Encapsulamento <br>
+                 b) Herança <br>
+                 c) Agregação <br>
+                 d) Composição 
+            </h1>
+            <p class="respostas" id="resposta8">
+                a) Encapsulamento: O encapsulamento é uma técnica de programação orientada a objetos que protege o acesso aos atributos e métodos de uma classe, definindo visibilidades diferentes para eles. No diagrama de classes, o encapsulamento pode ser representado por símbolos como + (public), - (private) e # (protected) antes dos nomes dos atributos e métodos de uma classe, indicando a visibilidade e restrições de acesso. <br> <br>
+
+                b) Herança: A herança é uma relação entre duas classes em que uma classe (subclasse) é derivada de outra classe (superclasse), herda seus atributos e métodos e adiciona novos. No diagrama de classes, a herança pode ser representada por uma seta sólida com a ponta fechada apontando da subclasse para a superclasse. <br> <br>
+
+                c) Agregação: A agregação é uma relação entre duas classes em que uma classe é composta por outra classe, mas essa outra classe pode ser compartilhada por outras classes. No diagrama de classes, a agregação pode ser representada por uma linha com losango aberto no final apontando da classe que contém para a classe compartilhada. <br> <br>
+
+                d) Composição: A composição é uma relação entre duas classes em que uma classe é composta por outra classe, mas essa outra classe não pode ser compartilhada por outras classes. No diagrama de classes, a composição pode ser representada por uma linha com losango preenchido no final apontando da classe que contém para a classe que é exclusiva dela.
+
+
+            </p>
+        </div>
+    </section>
+
+</body>
+<script src="main.js"></script>
+</html>
